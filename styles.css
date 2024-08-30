@@ -1,0 +1,567 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Discount Banner Styling */
+.discount-banner {
+    background-color: #eb75d7;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.1em;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.discount-banner p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+#searchBar {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-container button {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #e67e22;
+    border: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #d35400;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+#cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+#cart-total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#heroVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+    min-height: 94%;
+    width: 210vh;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.shop-now {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #d35400;
+}
+
+
+.whatsapp-fixed {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ef7fc4;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-fixed:hover {
+    background-color: #128C7E; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero-content .shop-now {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.category-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.category-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+.hidden {
+    display: none;
+}
+
+.see-more-container {
+    margin-top: 20px;
+}
+
+.see-more-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.see-more-btn:hover {
+    background-color: #c0392b;
+}
+
+
+
+/* Add to Cart Button Styling */
+.add-to-cart-button {
+    padding: 10px 15px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.add-to-cart-button:hover {
+    background-color: #d35400;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Write a Review Section on the Side */
+.review-section {
+    background-color: #f9f9f9;
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#review-form input,
+#review-form select,
+#review-form textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+#review-form button {
+    padding: 10px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#review-form button:hover {
+    background-color: #d35400;
+}
+
+
+
+
+
+/* Row of Reviews */
+.reviews-row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Space between review items */
+}
+
+.review-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Set width for each review item */
+}
+
+.review-item p {
+    margin: 5px 0;
+}
+
+
+
+
+
+
+/* Reviews Section */
+.reviews-section {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.reviews-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+
+/* Hidden Reviews initially hidden */
+.hidden-reviews {
+    display: none;
+}
+
+.see-more-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.see-more-button:hover {
+    background-color: #d35400;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+/* About Us Section */
+
+.about-us-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us-text {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Hidden text initially */
+.more-text {
+    display: none;
+}
+
+.read-more-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.read-more-button:hover {
+    background-color: #d35400;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #f2a6a6;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.social-button:hover {
+    background-color: white;
+    color: #f2a6a6;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
+
+.footer-bottom img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
